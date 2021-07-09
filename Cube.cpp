@@ -41,7 +41,9 @@ int main()
 			spawnTimer += 0.01f;
 		}
 
-		std::cout << spawnTimer << std::endl;
+		//std::cout << spawnTimer << std::endl;
+		std::cout << mouseLocation.getPosition(window).x << " ";
+		std::cout << mouseLocation.getPosition(window).y << std::endl;
 
 		window.clear();
 		window.draw(player);
