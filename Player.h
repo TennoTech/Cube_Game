@@ -9,12 +9,12 @@ public:
 	sf::RectangleShape& GetPlayer();
 	void DrawPlayer(sf::RenderWindow& window);
 	void AddPoints(int pointsToAdd);
+	unsigned GetScore();
 
 private:
 	sf::RectangleShape player;
 	sf::Mouse mouseLocation;
-	//window.setMouseCursorVisible(false);
 
-	unsigned points;
+	unsigned score;
 };
 
